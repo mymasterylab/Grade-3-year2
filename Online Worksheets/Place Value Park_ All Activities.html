@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Place Value Park: All Activities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Lexend:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--teal:#00A7B2;--ink:#141414;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:#fff;color:var(--ink);font-family:'Lexend',system-ui,sans-serif}
+main{max-width:1040px;margin:0 auto;padding:24px 16px 48px}
+.hero{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;background:#E5F7F8;border-radius:30px 30px 30px 8px;padding:18px 24px;margin-bottom:22px}
+.hero svg{width:120px;height:120px}
+h1,h2{font-family:'Baloo 2',sans-serif;margin:0;line-height:1.05}
+h1{font-size:44px}.hero p{margin:6px 0 0;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.card{border:3px solid color-mix(in srgb,var(--c) 35%,#fff);border-radius:24px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.top{display:flex;gap:10px;align-items:center}
+.num{background:var(--c);color:#fff;font-family:'Baloo 2';font-weight:800;font-size:24px;border-radius:12px;min-width:40px;text-align:center}
+h2{font-size:24px}
+.acts{display:grid;gap:8px}
+.act{display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--ink);font-weight:600;border:2px solid #e3eff0;border-radius:14px;padding:8px 10px}
+.act:hover{background:#f3fbfb}
+.tag{color:#fff;border-radius:8px;padding:0 8px;font-family:'Baloo 2';font-weight:800}
+.none{margin:0;color:#5a5a5a;font-size:15px}
+.ws{margin-top:auto;display:flex;gap:8px;align-items:center;background:var(--c);color:#fff;text-decoration:none;font-weight:600;border-radius:14px;padding:9px 12px}
+.ws svg use{}
+a:focus-visible{outline:3px solid #FAA71C;outline-offset:2px}
+.foot{text-align:center;color:#5a5a5a;font-size:13px;margin-top:22px}
+@media (max-width:560px){.hero{grid-template-columns:72px 1fr}.hero svg{width:72px;height:72px}h1{font-size:32px}}
+</style></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="pip" viewBox="0 0 120 120">
+      <ellipse cx="26" cy="34" rx="16" ry="18" fill="#D77F28"/><ellipse cx="26" cy="36" rx="8" ry="10" fill="#C92426"/>
+      <ellipse cx="94" cy="34" rx="16" ry="18" fill="#D77F28"/><ellipse cx="94" cy="36" rx="8" ry="10" fill="#C92426"/>
+      <ellipse cx="60" cy="66" rx="44" ry="40" fill="#D77F28"/>
+      <path d="M22 70 Q40 52 52 66 Q40 92 22 70Z" fill="#fff"/><path d="M98 70 Q80 52 68 66 Q80 92 98 70Z" fill="#fff"/>
+      <ellipse cx="60" cy="86" rx="20" ry="15" fill="#fff"/>
+      <circle cx="44" cy="64" r="6" fill="#141414"/><circle cx="76" cy="64" r="6" fill="#141414"/>
+      <circle cx="46" cy="62" r="2" fill="#fff"/><circle cx="78" cy="62" r="2" fill="#fff"/>
+      <ellipse cx="60" cy="80" rx="6" ry="4" fill="#141414"/>
+      <path d="M53 89 Q60 95 67 89" stroke="#141414" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M24 32 Q60 4 96 32 L90 38 Q60 22 30 38Z" fill="#00A7B2"/>
+      <rect x="36" y="14" width="48" height="16" rx="8" fill="#00A7B2"/><circle cx="60" cy="22" r="5" fill="#FAA71C"/>
+    </symbol>
+    <symbol id="bot" viewBox="0 0 120 120">
+      <line x1="60" y1="8" x2="60" y2="26" stroke="#141414" stroke-width="4"/><circle cx="60" cy="8" r="7" fill="#FAA71C"/>
+      <rect x="16" y="26" width="88" height="70" rx="22" fill="#00A7B2"/>
+      <rect x="28" y="38" width="64" height="44" rx="12" fill="#fff"/>
+      <circle cx="46" cy="58" r="7" fill="#141414"/><circle cx="74" cy="58" r="7" fill="#141414"/>
+      <path d="M48 73 Q60 67 72 73" stroke="#C92426" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="8" y="52" width="10" height="22" rx="5" fill="#D77F28"/><rect x="102" y="52" width="10" height="22" rx="5" fill="#D77F28"/>
+      <rect x="40" y="96" width="40" height="14" rx="6" fill="#D77F28"/>
+    </symbol>
+    <symbol id="berry" viewBox="0 0 20 20"><circle cx="10" cy="11" r="8" fill="#FAA71C"/><path d="M10 3 q3 -3 6 0" stroke="#00A7B2" stroke-width="2.5" fill="none"/></symbol>
+    <symbol id="stick" viewBox="0 0 12 44"><rect x="1" y="1" width="10" height="42" rx="4" fill="#00A7B2"/><g fill="#fff" opacity=".7"><circle cx="6" cy="5" r="1.6"/><circle cx="6" cy="9.2" r="1.6"/><circle cx="6" cy="13.4" r="1.6"/><circle cx="6" cy="17.6" r="1.6"/><circle cx="6" cy="21.8" r="1.6"/><circle cx="6" cy="26" r="1.6"/><circle cx="6" cy="30.2" r="1.6"/><circle cx="6" cy="34.4" r="1.6"/><circle cx="6" cy="38.6" r="1.6"/></g></symbol>
+    <symbol id="tray" viewBox="0 0 44 44"><rect x="1" y="1" width="42" height="42" rx="6" fill="#D77F28"/><g stroke="#fff" stroke-opacity=".45" stroke-width="1"><path d="M5 1v42M9 1v42M13 1v42M17 1v42M21 1v42M25 1v42M29 1v42M33 1v42M37 1v42M1 5h42M1 9h42M1 13h42M1 17h42M1 21h42M1 25h42M1 29h42M1 33h42M1 37h42"/></g></symbol>
+    <symbol id="crate" viewBox="0 0 48 48"><path d="M4 14 L24 4 L44 14 L44 36 L24 46 L4 36Z" fill="#C92426"/><path d="M4 14 L24 24 L44 14 L24 4Z" fill="#e0494b"/><path d="M24 24 L24 46" stroke="#fff" stroke-opacity=".5" stroke-width="2"/></symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.3 4.7 1.6 7.2L12 17.8 5.7 21.5l1.6-7.2L2 9.6 9 9z" fill="none" stroke="#FAA71C" stroke-width="2" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+<main>
+<header class="hero"><svg viewBox="0 0 120 120" role="img" aria-label="Ranger Pip"><use href="#pip"/></svg>
+<div><h1>Place Value Park</h1><p>Pick a chapter. Each game and online worksheet opens on its own page.</p></div></header>
+<div class="grid"><section class="card" style="--c:#00A7B2"><div class="top"><span class="num">1</span><h2>Welcome, Junior Ranger</h2></div>
+<div class="acts"><a class="act" href="https://claude.ai/artifact/SvzjrHqDcHNYpSL3Z2xoVf" target="_blank" rel="noopener"><span class="tag" style="background:#00A7B2">1A</span>Bundling Machine</a><a class="act" href="https://claude.ai/artifact/Pw5VW1VcdSfEDEDoY1mnCc" target="_blank" rel="noopener"><span class="tag" style="background:#00A7B2">1B</span>Digit Detective</a></div><a class="ws" href="https://claude.ai/artifact/XxbqHiknbw62dZAt8JMUev" target="_blank" rel="noopener"><svg width="22" height="22" aria-hidden="true"><use href="#pencil"/></svg>Online worksheet: Ranger Quick Quest</a></section><section class="card" style="--c:#D77F28"><div class="top"><span class="num">2</span><h2>Build the Animal Homes</h2></div>
+<div class="acts"><a class="act" href="https://claude.ai/artifact/58hX3hJt1rxgdzxVZPjgCj" target="_blank" rel="noopener"><span class="tag" style="background:#D77F28">2A</span>Number Builder</a><a class="act" href="https://claude.ai/artifact/27egE8r7ego4ocWKNPKiqW" target="_blank" rel="noopener"><span class="tag" style="background:#D77F28">2B</span>Sign Fixer</a></div><a class="ws" href="https://claude.ai/artifact/FA5zm7mK1b9GDUjvwNsvp5" target="_blank" rel="noopener"><svg width="22" height="22" aria-hidden="true"><use href="#pencil"/></svg>Online worksheet: Home Sign Builder</a></section><section class="card" style="--c:#C92426"><div class="top"><span class="num">3</span><h2>The Berry Swap Shop</h2></div>
+<div class="acts"><a class="act" href="https://claude.ai/artifact/3gq6SomTKzzRN8nL2oiWsd" target="_blank" rel="noopener"><span class="tag" style="background:#C92426">3A</span>Swap Shop Orders</a><a class="act" href="https://claude.ai/artifact/4iCtxQuKnBoz9jMgptTX1M" target="_blank" rel="noopener"><span class="tag" style="background:#C92426">3B</span>Fair or Not Fair?</a></div><a class="ws" href="https://claude.ai/artifact/SDDYjzjeLu2YFApy6FBAUA" target="_blank" rel="noopener"><svg width="22" height="22" aria-hidden="true"><use href="#pencil"/></svg>Online worksheet: Swap Shop Rush</a></section><section class="card" style="--c:#00A7B2"><div class="top"><span class="num">4</span><h2>Pip's Great Race</h2></div>
+<div class="acts"><a class="act" href="https://claude.ai/artifact/XQsDDe5MfrYksn9juosc3T" target="_blank" rel="noopener"><span class="tag" style="background:#00A7B2">4A</span>The Great Race</a><a class="act" href="https://claude.ai/artifact/X6A9vGW85NEhzC9HDtYCBW" target="_blank" rel="noopener"><span class="tag" style="background:#00A7B2">4B</span>Line Them Up</a></div><a class="ws" href="https://claude.ai/artifact/6yhH7zCSr6gqzvMTaTLFDD" target="_blank" rel="noopener"><svg width="22" height="22" aria-hidden="true"><use href="#pencil"/></svg>Online worksheet: Race Day Replay</a></section><section class="card" style="--c:#D77F28"><div class="top"><span class="num">5</span><h2>The Treehouse Lift</h2></div>
+<div class="acts"><a class="act" href="https://claude.ai/artifact/NNKPctc81xbnEhSnRoy5rQ" target="_blank" rel="noopener"><span class="tag" style="background:#D77F28">5A</span>Lift Rides</a><a class="act" href="https://claude.ai/artifact/29ugHv9YpfogEqiyTtjb6p" target="_blank" rel="noopener"><span class="tag" style="background:#D77F28">5B</span>Lift Dash</a></div><a class="ws" href="https://claude.ai/artifact/Hng6DTsJ23P8AN9G7BQitJ" target="_blank" rel="noopener"><svg width="22" height="22" aria-hidden="true"><use href="#pencil"/></svg>Online worksheet: Lift Practice</a></section><section class="card" style="--c:#FAA71C"><div class="top"><span class="num">6</span><h2>Feeding Day</h2></div>
+<div class="acts"><p class="none">Worksheet chapter: no game today.</p></div><a class="ws" href="https://claude.ai/artifact/3AW85raGhLVJERJD8KhXqn" target="_blank" rel="noopener"><svg width="22" height="22" aria-hidden="true"><use href="#pencil"/></svg>Online worksheet: Feeding Day Rush</a></section><section class="card" style="--c:#C92426"><div class="top"><span class="num">7</span><h2>Census Day</h2></div>
+<div class="acts"><a class="act" href="https://claude.ai/artifact/FedRxpuVLzzfzKHd4idJJ9" target="_blank" rel="noopener"><span class="tag" style="background:#C92426">7A</span>Count the Animals</a><a class="act" href="https://claude.ai/artifact/MZHdqty5rFagmWC6pZpXKq" target="_blank" rel="noopener"><span class="tag" style="background:#C92426">7B</span>Fix the Board</a></div><a class="ws" href="https://claude.ai/artifact/SYvDJsxqg1KJWy2FGNv6Qw" target="_blank" rel="noopener"><svg width="22" height="22" aria-hidden="true"><use href="#pencil"/></svg>Online worksheet: Detective Training</a></section><section class="card" style="--c:#FAA71C"><div class="top"><span class="num">8</span><h2>The Golden Ranger Badge</h2></div>
+<div class="acts"><p class="none">Worksheet chapter: no game today.</p></div><a class="ws" href="https://claude.ai/artifact/NXxf8CrSSWFg3788J8nRhd" target="_blank" rel="noopener"><svg width="22" height="22" aria-hidden="true"><use href="#pencil"/></svg>Online worksheet: Badge Practice Run</a></section></div><p class="foot">MyMasteryLab · Place Value Park</p></main></body></html>
